@@ -1,0 +1,17 @@
+#ifndef IBU_H
+#define IBU_H
+
+class anak;
+
+//membuat class ibu pada file header ibu.h
+class ibu {
+public:
+    //deklarasi member variabel pada class ibu
+    string nama;
+    vector<anak*> daftar_anak;
+
+    //membuat constructor dan destructor pada class ibu
+    ibu(string pNama) :nama(pNama) {
+        cout << "Ibu \"" << nama << "\" ada\n";
+    };
+}
