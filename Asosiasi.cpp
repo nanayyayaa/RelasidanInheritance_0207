@@ -96,4 +96,13 @@ int main()
     varDokter2->cetakPasien();
     varPasien1->cetakDokter();
     varPasien2->cetakDokter();
+
+    //mendelete variabel - variabel pointer dari memori
+    delete varPasien1;
+    delete varPasien2;
+    delete varDokter1;
+    delete varDokter2;
+
+    return 0;
+    
 }
