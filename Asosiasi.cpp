@@ -67,3 +67,22 @@ void dokter::tambahPasien(pasien* pPasien) {
     daftar_pasien.push_back(pPasien);
     pPasien->tambahDokter(this);
 }
+
+void dokter::cetakPasien() {
+    cout << "Daftar Pasien dari Dokter \"" << this->nama << "\":\n";
+    for (auto& a : daftar_pasien)
+    {
+        cout << a->nama << "\n";
+    }
+    cout << endl;
+}
+
+int main()
+{
+
+    //deklarasi dan pemberian nilai variabel pointer untuk objek dari class dokter dan pasien
+    dokter* varDokter1 = new dokter("dr. Budi");
+    dokter* varDokter2 = new dokter("dr. Tono");
+    pasien* varPasien1 = new pasien("Andi");
+    pasien* varPasien2 = new pasien("Lia");
+}
